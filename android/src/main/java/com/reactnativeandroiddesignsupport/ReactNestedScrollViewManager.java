@@ -88,16 +88,18 @@ public class ReactNestedScrollViewManager
       ReactScrollViewCommandHelper.ScrollToCommandData data) {
     scrollView.smoothScrollTo(data.mDestX, data.mDestY);
   }
-  @Override
+  
+
   public void scrollWithoutAnimationTo(
       ReactNestedScrollView scrollView,
       ReactScrollViewCommandHelper.ScrollToCommandData data) {
     scrollView.scrollTo(data.mDestX, data.mDestY);
   }
+
   @Override
   public @Nullable Map getExportedCustomDirectEventTypeConstants() {
     return MapBuilder.builder()
-        .put(ScrollEvent.EVENT_NAME, MapBuilder.of("registrationName", "onScroll"))
+        .put("topScroll", MapBuilder.of("registrationName", "onScroll"))
         .put("topScrollBeginDrag", MapBuilder.of("registrationName", "onScrollBeginDrag"))
         .put("topScrollEndDrag", MapBuilder.of("registrationName", "onScrollEndDrag"))
         .put("topScrollAnimationEnd", MapBuilder.of("registrationName", "onScrollAnimationEnd"))
