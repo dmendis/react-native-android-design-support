@@ -15,6 +15,7 @@ package com.reactnativeandroiddesignsupport;
 
 // EDITED: 1. Import additional classes
 import com.facebook.react.views.scroll.ScrollEvent;
+import com.facebook.react.views.scroll.ScrollEventType;
 
 import android.os.SystemClock;
 import android.view.View;
