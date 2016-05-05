@@ -25,8 +25,6 @@ public class DesignSupportPackage implements ReactPackage {
   @Override
   public List<NativeModule> createNativeModules(ReactApplicationContext reactContext) {
     List<NativeModule> modules = new ArrayList<>();
-
-    modules.add(new SnackbarModule(reactContext, mActivity));
     return modules;
   }
 
