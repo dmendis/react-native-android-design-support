@@ -7,7 +7,7 @@ import android.view.ViewGroup;
 import android.support.design.widget.TextInputLayout;
 
 import com.facebook.react.uimanager.ViewGroupManager;
-import com.facebook.react.uimanager.ReactProp;
+import com.facebook.react.uimanager.annotations.ReactProp;
 import com.facebook.react.uimanager.ThemedReactContext;
 
 public class ReactTextInputLayoutManager extends ViewGroupManager<TextInputLayout> {
